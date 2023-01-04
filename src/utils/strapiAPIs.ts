@@ -3,6 +3,6 @@ import { header } from "./mockStrapiResponses";
 
 
 export function fetchHeader() {
-  const headerResponse = header.data.attributes.title;
-  return headerResponse
+  const { title } = header.data.attributes;
+  return title;
 }
