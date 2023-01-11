@@ -34,7 +34,8 @@ export const home = {
       "widget1":{
         "id":1,
         "hello":
-        "Hello, I'm Logan!",
+        "Hello, I'm",
+        "name": "Logan",
         "subtext": "idk can't think rn"},
       "widget2":{
         "id":1,
