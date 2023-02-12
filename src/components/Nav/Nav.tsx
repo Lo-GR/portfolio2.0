@@ -1,6 +1,6 @@
 const Nav = () => {
     return (
-        <div className="flex basis-48 flex-col shrink grow">
+        <div className="flex-1 basis-48 flex-col">
             nav
         </div>
     )
