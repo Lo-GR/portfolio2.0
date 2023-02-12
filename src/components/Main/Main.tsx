@@ -1,6 +1,6 @@
 const Main = () => {
     return (
-        <div className="border border-black flex-1 basis-[75%]">
+        <div className="flex-1 basis-3/5 h-full">
             Main
         </div>
     )
