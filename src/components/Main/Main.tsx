@@ -1,6 +1,8 @@
 const Main = () => {
     return (
-        <div></div>
+        <div className="border border-black">
+            Main
+        </div>
     )
 }
 
