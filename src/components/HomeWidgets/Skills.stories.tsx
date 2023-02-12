@@ -6,5 +6,5 @@ export default {
 }
 
 export const SkillsComponent = () => (
-  <Skills topText={"top text"} skills={["skill1", "skill2", "skill1", "skill2",]} />
+  <Skills topText={"top text"} skills={["skill1,", "skill2,", "skill1,", "skill2",]} />
 )

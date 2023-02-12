@@ -56,7 +56,7 @@ export const home = {
         "id": 1,
         "top-text": "Skills at a glance",
         "skills": {
-          "skills": ["skill", "skill", "skill", "skill", "skill"]
+          "skills": ["skill,", "skill,", "skill,", "skill,", "skill"]
         }
       }
     }

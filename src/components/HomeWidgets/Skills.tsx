@@ -6,7 +6,7 @@ export default function Skills({ topText, skills }: { topText: string, skills: s
       <p className='text-light-500 font-bold mb-8'>
         {topText}
       </p>
-      <p className='text-light-500'>
+      <p className='text-highlight'>
         {skills.map(skill => `${skill} `)}
       </p>
     </div>

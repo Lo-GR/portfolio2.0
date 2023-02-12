@@ -1,9 +1,9 @@
 const globalConfig = {
   footer: {
-    height: '15rem'
+    height: 15,
   },
   header: {
-    height: '15rem',
+    height: 15,
   }
 }
 
