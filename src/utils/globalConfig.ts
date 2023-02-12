@@ -1,10 +1,12 @@
+
 const globalConfig = {
   footer: {
-    height: 15,
+    height: 5,
   },
   header: {
-    height: 15,
+    height: 10,
   }
 }
+
 
 export { globalConfig };
