@@ -1,28 +1,50 @@
 import classNames from "classnames";
 import { globalConfig } from "../../utils/globalConfig";
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import { motion, AnimatePresence, useCycle } from "framer-motion";
+
 const { nav } = globalConfig;
 
 interface MobileNavProps {
   open: boolean;
+  handleOpen: any;
 }
 
-const MobileNav = ({ open }: MobileNavProps) => {
+const MobileNav = ({ open, handleOpen }: MobileNavProps) => {
+  const variants = {
+    visible: {
+      x: 0,
+      transition: {
+        duration: 1,
+      },
+    },
+    hidden: {
+      x: -600,
+      transition: {
+        duration: 1,
+      },
+    }
+  }
 
-  const isOpen = open ? 'flex' : 'hidden';
+  const location = useLocation();
 
   return (
-    <div className={classNames(isOpen, "bg-dark-500 text-light-500 h-full w-full absolute inset-0")}>
-      <div className="flex flex-col gap-10 text-center text-3xl uppercase justify-center h-full">
-        {
-          nav.map((element, index) => {
-            return (
-              <Link to={`${element.to}`}>{element.name}</Link>
-            )
-          })
-        }
-      </div>
-    </div>
+    <AnimatePresence>
+      {open &&
+        <motion.div variants={variants} initial="hidden" animate="visible" exit="hidden" className={classNames("bg-dark-500 h-full w-full absolute inset-0")}>
+          <div className="flex flex-col gap-10 text-center text-3xl uppercase justify-center h-full">
+            {
+              nav.map((element, index) => {
+                return (
+                  <Link onClick={() => handleOpen} to={`${element.to}`}><p className={location.pathname === element.to ? "text-highlight" : "text-light-500"}>{element.name}</p></Link>
+                )
+              })
+            }
+          </div>
+        </motion.div>
+
+      }
+    </AnimatePresence>
   )
 }
 

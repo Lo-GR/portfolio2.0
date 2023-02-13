@@ -20,8 +20,8 @@ export default function Header({ open, handleOpen }: HeaderProps) {
 
   return (
     <div className={classNames(headerHeight, 'p-10 bg-dark-500 w-full flex')}>
-      <h1 className='text-light-500 text-5xl flex-1'>{title}</h1>
-      <div className="text-white">
+      <h1 className='text-light-500 text-5xl flex-1 opacity-75'>{title.toUpperCase()}</h1>
+      <div className="text-white ">
         {
           open ? <CloseIcon onClick={() => handleOpen()} /> : <MenuIcon onClick={() => handleOpen()} />
         }

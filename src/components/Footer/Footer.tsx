@@ -18,17 +18,17 @@ const Footer = ({ linkedinURL, email, githubURL }: FooterPropTypes) => {
 
     return (
         <div className={classNames(footerHeight, "w-full p-10 bg-dark-500 flex flex-row")}>
-            <div >
+            <div className="ml-8">
                 <a href={linkedinURL} className="bg-dark-400 rounded-full p-1 flex content-center w-8">
                     <LinkedInIcon sx={{ color: "#FFFCF2" }} />
                 </a>
             </div>
-            <div >
+            <div className="ml-8">
                 <a href={email} className="bg-dark-400 rounded-full p-1 flex content-center w-8">
                     <GitHubIcon sx={{ color: "#FFFCF2" }} />
                 </a>
             </div>
-            <div >
+            <div className="ml-8">
                 <a href={githubURL} className="bg-dark-400 rounded-full p-1 flex content-center w-8" >
                     <EmailIcon sx={{ color: "#FFFCF2" }} />
                 </a>

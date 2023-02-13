@@ -20,7 +20,6 @@ function App() {
   const [open, setOpen] = useState(false);
 
   const handleMobileNav = () => {
-    console.log("opening mobile")
     setOpen(!open);
   }
 
@@ -30,7 +29,7 @@ function App() {
       <div className={classNames(contentHeight, 'flex flex-row relative')}>
         <BrowserRouter>
           <Nav />
-          <MobileNav open={open} />
+          <MobileNav open={open} handleOpen={handleMobileNav} />
           <Routes>
             <Route index path="/" element={<Main />} />
           </Routes>
