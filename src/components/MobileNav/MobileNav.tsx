@@ -19,7 +19,7 @@ const MobileNav = ({ open, handleOpen }: MobileNavProps) => {
       },
     },
     hidden: {
-      x: -600,
+      x: -800,
       transition: {
         duration: 1,
       },
@@ -28,15 +28,17 @@ const MobileNav = ({ open, handleOpen }: MobileNavProps) => {
 
   const location = useLocation();
 
+  console.log(open);
+
   return (
     <AnimatePresence>
       {open &&
         <motion.div variants={variants} initial="hidden" animate="visible" exit="hidden" className={classNames("bg-dark-500 h-full w-full absolute inset-0")}>
-          <div className="flex flex-col gap-10 text-center text-3xl uppercase justify-center h-full">
+          <div onClick={() => handleOpen()} className="flex flex-col gap-10 text-center text-3xl uppercase justify-center h-full">
             {
               nav.map((element, index) => {
                 return (
-                  <Link onClick={() => handleOpen} to={`${element.to}`}><p className={location.pathname === element.to ? "text-highlight" : "text-light-500"}>{element.name}</p></Link>
+                  <Link to={`${element.to}`}><p className={location.pathname === element.to ? "text-highlight" : "text-light-500"}>{element.name}</p></Link>
                 )
               })
             }
@@ -44,7 +46,7 @@ const MobileNav = ({ open, handleOpen }: MobileNavProps) => {
         </motion.div>
 
       }
-    </AnimatePresence>
+    </AnimatePresence >
   )
 }
 
