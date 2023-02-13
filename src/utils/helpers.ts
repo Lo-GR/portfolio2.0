@@ -17,13 +17,13 @@ const calcHeight = (height: number) => {
 const getHeight = (height: number) => {
   switch (height) {
     case (15):
-      return 'h-[calc(100%-15rem)]';
+      return 'h-full md:h-[calc(100%-15rem)]';
     case (20):
-      return 'h-[calc(100%-20rem)]';
+      return 'h-full md:h-[calc(100%-20rem)]';
     case (30):
-      return 'h-[calc(100%-30rem)]';
+      return 'h-full md:h-[calc(100%-30rem)]';
     default:
-      return 'h-[calc(100%-30rem)]';
+      return 'h-full md:h-[calc(100%-30rem)]';
   }
 }
 

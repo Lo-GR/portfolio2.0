@@ -7,12 +7,12 @@ const { nav } = globalConfig;
 const Nav = () => {
     const location = useLocation();
     return (
-        <div className={classNames("flex-1 basis-48 bg-dark-500 h-full hidden md:block")}>
+        <div className={classNames("flex-1 basis-48 bg-dark-500 h-full hidden md:block border-r border-light-500 ")}>
             <div className="flex flex-col gap-10 text-center text-3xl uppercase justify-center h-full">
                 {
                     nav.map((element, index) => {
                         return (
-                            <Link to={`${element.to}`}><p className={location.pathname === element.to ? "text-highlight" : "text-light-500"}>{element.name}</p></Link>
+                            <Link to={`${element.to}`}><p className={classNames((location.pathname === element.to ? "text-highlight" : "text-light-500"))}>{element.name}</p></Link>
                         )
                     })
                 }

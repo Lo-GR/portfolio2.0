@@ -15,13 +15,13 @@ const MobileNav = ({ open, handleOpen }: MobileNavProps) => {
     visible: {
       x: 0,
       transition: {
-        duration: 1,
+        duration: .5,
       },
     },
     hidden: {
       x: -800,
       transition: {
-        duration: 1,
+        duration: .5,
       },
     }
   }

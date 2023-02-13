@@ -1,13 +1,16 @@
 import './App.css';
 import Header from './components/Header/Header';
 import Nav from './components/Nav/Nav';
-import Main from './components/Main/Main';
+import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
 import { globalConfig } from './utils/globalConfig';
 import { getHeight } from './utils/helpers';
 import classNames from "classnames";
 import { useState } from 'react';
 import MobileNav from './components/MobileNav/MobileNav';
+import Projects from './components/Projects/Projects';
+import Background from './components/Background/Background';
+import About from './components/About/About';
 
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -31,7 +34,10 @@ function App() {
           <Nav />
           <MobileNav open={open} handleOpen={handleMobileNav} />
           <Routes>
-            <Route index path="/" element={<Main />} />
+            <Route index path="/" element={<Home />} />
+            <Route index path="/projects" element={<Projects />} />
+            <Route index path="/background" element={<Background />} />
+            <Route index path="/about" element={<About />} />
           </Routes>
         </BrowserRouter>
       </div>

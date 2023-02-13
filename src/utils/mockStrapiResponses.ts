@@ -43,7 +43,7 @@ export const home = {
       "widget2": {
         "id": 1,
         "title": "Front-end",
-        "subtitle": "- Developer\n- Engineer\n- Enjoyer"
+        "subtitle": ["Developer", "Developer", "Developer"]
       }
       ,
       "widget3": {
@@ -54,10 +54,8 @@ export const home = {
       },
       "widget4": {
         "id": 1,
-        "top-text": "Skills at a glance",
-        "skills": {
-          "skills": ["skill,", "skill,", "skill,", "skill,", "skill"]
-        }
+        "topText": "Skills at a glance",
+        "skills": ["skill,", "skill,", "skill,", "skill,", "skill"]
       }
     }
   },
