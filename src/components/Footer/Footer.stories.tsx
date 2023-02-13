@@ -6,5 +6,5 @@ export default {
 }
 
 export const FooterComponent = () => (
-  <Footer linkedinLink="https://www.linkedin.com/in/lo-gr/" />
+  <Footer linkedinURL="https://www.linkedin.com/in/lo-gr/" email="logan.roth.g@gmail.com" githubURL="https://github.com/Lo-GR" />
 )

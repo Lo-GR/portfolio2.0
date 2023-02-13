@@ -3,20 +3,36 @@ import classNames from "classnames";
 import { calcHeight } from "../../utils/helpers";
 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import EmailIcon from '@mui/icons-material/Email';
 
 interface FooterPropTypes {
-    linkedinLink: string
+    linkedinURL: string,
+    email: string,
+    githubURL: string
 }
 
-const Footer = ({ linkedinLink }: FooterPropTypes) => {
+const Footer = ({ linkedinURL, email, githubURL }: FooterPropTypes) => {
     const { height } = globalConfig.footer;
     let footerHeight = calcHeight(height);
 
     return (
-        <div className={classNames(footerHeight, "w-full p-10 bg-dark-500")}>
-            <a href={linkedinLink}>
-                <LinkedInIcon />
-            </a>
+        <div className={classNames(footerHeight, "w-full p-10 bg-dark-500 flex flex-row")}>
+            <div >
+                <a href={linkedinURL} className="bg-dark-400 rounded-full p-1 flex content-center w-8">
+                    <LinkedInIcon sx={{ color: "#FFFCF2" }} />
+                </a>
+            </div>
+            <div >
+                <a href={email} className="bg-dark-400 rounded-full p-1 flex content-center w-8">
+                    <GitHubIcon sx={{ color: "#FFFCF2" }} />
+                </a>
+            </div>
+            <div >
+                <a href={githubURL} className="bg-dark-400 rounded-full p-1 flex content-center w-8" >
+                    <EmailIcon sx={{ color: "#FFFCF2" }} />
+                </a>
+            </div>
         </div>
     )
 }
