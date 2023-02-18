@@ -5,4 +5,4 @@ export default {
   component: BackgroundSkills
 }
 
-export const Background = () => <BackgroundSkills skills={["skills", "skills", "skills", "skills", "skills", "skills", "skills", "skills"]} className="" />
+export const BackgroundSkillsComponent = () => <BackgroundSkills skills={["skills", "skills", "skills", "skills", "skills", "skills", "skills", "skills"]} className="" />
