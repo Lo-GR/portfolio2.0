@@ -1,4 +1,4 @@
-import portrait from '../../assets/1657481587710.jpg'
+import portrait from '../assets/1657481587710.jpg'
 
 export const header = {
   "data": {
