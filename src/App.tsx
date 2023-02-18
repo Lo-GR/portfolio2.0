@@ -6,14 +6,14 @@ import Footer from './components/Footer/Footer';
 import { globalConfig } from './utils/globalConfig';
 import { getHeight } from './utils/helpers';
 import classNames from "classnames";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import MobileNav from './components/MobileNav/MobileNav';
 import Projects from './components/Projects/Projects';
 import Background from './components/Background/Background';
 import About from './components/About/About';
 
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 function App() {
   const footerHeight: number = globalConfig.footer.height;
@@ -21,15 +21,25 @@ function App() {
   const contentHeight: string = getHeight(footerHeight + headerHeight);
 
   const [open, setOpen] = useState(false);
+  const [heightStyling, setHeightStyling] = useState(contentHeight);
+
+  const location = window.location.pathname;
+  // let heightStyling = contentHeight;
+
+  useEffect(() => {
+    if (location === '/background') {
+      setHeightStyling('h-full')
+    }
+  }, [location])
 
   const handleMobileNav = () => {
     setOpen(!open);
   }
 
   return (
-    <div className='h-full'>
+    <div className='md:h-full'>
       <Header open={open} handleOpen={handleMobileNav} />
-      <div className={classNames(contentHeight, 'flex flex-row relative')}>
+      <div className={classNames(heightStyling, 'flex flex-row relative')}>
         <BrowserRouter>
           <Nav />
           <MobileNav open={open} handleOpen={handleMobileNav} />
