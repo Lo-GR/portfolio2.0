@@ -8,7 +8,7 @@ interface BlurbProps {
 export default function Blurb({ experience, className }: BlurbProps) {
   return (
     <div className={classNames(className, 'bg-dark-400 w-full p-10 rounded')}>
-      <ReactMarkdown className='text-light-500'>{experience}</ReactMarkdown>
+      <ReactMarkdown className='text-light-500 text-lg leading-loose'>{experience}</ReactMarkdown>
     </div>
   )
 }
