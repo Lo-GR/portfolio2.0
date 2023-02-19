@@ -34,7 +34,7 @@ const MobileNav = ({ open, handleOpen }: MobileNavProps) => {
     <AnimatePresence>
       {open &&
         <motion.div variants={variants} initial="hidden" animate="visible" exit="hidden" className={classNames("bg-dark-500 h-full w-full absolute inset-0")}>
-          <div onClick={() => handleOpen()} className="flex flex-col gap-10 text-center text-3xl uppercase justify-center h-full">
+          <div onClick={() => handleOpen()} className="flex flex-col gap-10 text-center text-3xl uppercase justify-start h-full">
             {
               nav.map((element, index) => {
                 return (

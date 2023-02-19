@@ -11,16 +11,16 @@ const globalConfig = {
       name: 'Home',
       to: '/'
     },
-    {
-      name: 'Projects',
-      to: '/projects'
-    },
+    // {
+    //   name: 'Projects',
+    //   to: '/projects'
+    // },
     {
       name: 'Background',
       to: '/background'
     },
     {
-      name: 'About',
+      name: 'About this page',
       to: '/about'
     },
   ]
