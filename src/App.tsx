@@ -30,7 +30,7 @@ function App() {
           <Nav />
           <Routes>
             <Route index path="/" element={<Home />} />
-            <Route index path="/projects" element={<Projects />} />
+            {/* <Route index path="/projects" element={<Projects />} /> */}
             <Route index path="/background" element={<Background />} />
             <Route index path="/about" element={<About />} />
           </Routes>
