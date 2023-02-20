@@ -10,12 +10,14 @@ interface GreetingProps {
 export default function Greeting({ hello, name, subtext, className = "" }: GreetingProps) {
   const variants = {
     visible: {
+      opacity: 1,
       y: 0,
       transition: {
         duration: .5,
       },
     },
     hidden: {
+      opacity: 0,
       y: 800,
       transition: {
         duration: .5,

@@ -11,6 +11,7 @@ export default function LinkedIn({ linkedinText, linkedinURL, className = "" }: 
 
   const variants = {
     visible: {
+      opacity: 1,
       y: 0,
       transition: {
         duration: .5,
@@ -18,6 +19,7 @@ export default function LinkedIn({ linkedinText, linkedinURL, className = "" }: 
       },
     },
     hidden: {
+      opacity: 0,
       y: 800,
       transition: {
         duration: .5,

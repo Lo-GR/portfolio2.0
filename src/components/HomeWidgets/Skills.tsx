@@ -10,6 +10,7 @@ interface SkillsProps {
 export default function Skills({ topText, skills, className = "" }: SkillsProps) {
   const variants = {
     visible: {
+      opacity: 1,
       y: 0,
       transition: {
         duration: .5,
@@ -17,6 +18,7 @@ export default function Skills({ topText, skills, className = "" }: SkillsProps)
       },
     },
     hidden: {
+      opacity: 0,
       y: 800,
       transition: {
         duration: .5,

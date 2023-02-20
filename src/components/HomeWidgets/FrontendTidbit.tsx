@@ -11,6 +11,7 @@ interface FrontendTidbitProps {
 export default function FrontendTidbit({ title, list, className = "" }: FrontendTidbitProps) {
   const variants = {
     visible: {
+      opacity: 1,
       y: 0,
       transition: {
         duration: .5,
@@ -18,6 +19,7 @@ export default function FrontendTidbit({ title, list, className = "" }: Frontend
       },
     },
     hidden: {
+      opacity: 0,
       y: 800,
       transition: {
         duration: .5,
