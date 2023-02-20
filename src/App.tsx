@@ -6,14 +6,14 @@ import Footer from './components/Footer/Footer';
 // import { globalConfig } from './utils/globalConfig';
 // import { getHeight } from './utils/helpers';
 import classNames from "classnames";
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import MobileNav from './components/MobileNav/MobileNav';
 // import Projects from './components/Projects/Projects';
 import Background from './components/Background/Background';
 import About from './components/About/About';
 
 
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const [open, setOpen] = useState(false);
