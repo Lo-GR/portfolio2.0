@@ -14,7 +14,7 @@ export default function Greeting({ hello, name, subtext, className = "" }: Greet
         <p className='text-light-500 font-bold mb-8'>
           {hello} <span className='text-highlight'>{name}</span>
         </p>
-        <p className='text-light-500'>
+        <p className='text-light-500 leading-relaxed font-mono'>
           {subtext}
         </p>
       </div>

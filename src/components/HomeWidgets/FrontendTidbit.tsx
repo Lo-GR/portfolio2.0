@@ -14,8 +14,8 @@ export default function FrontendTidbit({ title, list, className = "" }: Frontend
         <p className='text-light-500 font-bold mb-5 underline'>
           {title}
         </p>
-        <div className="flex flex-wrap">
-          {list.map((item) => <p className="text-highlight font-bold text-2xl">{item}</p>
+        <div className="flex flex-wrap flex-col h-full">
+          {list.map((item, index) => <p key={item} className={`text-highlight font-bold text-4xl font-mono ${index < list.length - 1 ? "mb-10" : ""}`}>{item}</p>
           )}
         </div>
       </div>

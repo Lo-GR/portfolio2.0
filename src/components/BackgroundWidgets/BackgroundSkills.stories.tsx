@@ -5,4 +5,4 @@ export default {
   component: BackgroundSkills
 }
 
-export const BackgroundSkillsComponent = () => <BackgroundSkills skills={["skills", "skills", "skills", "skills", "skills", "skills", "skills", "skills"]} className="" />
+export const BackgroundSkillsComponent = () => <BackgroundSkills skills={{ frontend: ["skill1,", "skill2,", "skill1,", "skill2",], backend: ["skill1,", "skill2,", "skill1,", "skill2",], cloudOps: ["skill1,", "skill2,", "skill1,", "skill2",] }} className="" />

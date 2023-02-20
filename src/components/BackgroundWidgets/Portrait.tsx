@@ -8,7 +8,7 @@ interface PortraitProps {
 export default function Portrait({ image, className }: PortraitProps) {
   return (
     <div className={classNames(className, 'w-full rounded relative')}>
-      <img src={image} alt="portrait of web developer" className='object-cover' />
+      <img src={image} alt="portrait of web developer" className='object-cover ' />
     </div >
   )
 }
