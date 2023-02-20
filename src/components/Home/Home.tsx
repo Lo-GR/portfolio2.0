@@ -13,9 +13,9 @@ export default function Home() {
 
   return (
     <div className={classNames(`flex flex-1 basis-3/5 h-full flex-wrap gap-5 p-3 md:p-10 bg-dark-500 justify-center  overflow-y-scroll scrollbar-hide`)}>
-      <FrontendTidbit className="flex shrink-1 grow-1 basis-full md:basis-[55%]" title={frontendTidbitProps.title} list={frontendTidbitProps.subtitle} />
-      <Greeting className="flex shrink-1 grow-1 basis-full md:basis-[35%]" hello={GreetingProps.hello} name={GreetingProps.name} subtext={GreetingProps.subtext} />
-      <LinkedIn className="flex shrink-1 grow-1 basis-full md:basis-[35%]" linkedinText={LinkedInProps.linkedinText} linkedinProfilePic={LinkedInProps.linkedinProfilePic} linkedinURL={LinkedInProps.linkedinURL} />
+      <Greeting className="flex shrink-1 grow-1 basis-full md:basis-[55%]" hello={GreetingProps.hello} name={GreetingProps.name} subtext={GreetingProps.subtext} />
+      <FrontendTidbit className="flex shrink-1 grow-1 basis-full md:basis-[35%]" title={frontendTidbitProps.title} list={frontendTidbitProps.subtitle} />
+      <LinkedIn className="flex shrink-1 grow-1 basis-full md:basis-[35%]" linkedinText={LinkedInProps.linkedinText} linkedinURL={LinkedInProps.linkedinURL} />
       <Skills className="flex shrink-1 grow-1 basis-full md:basis-[55%]" topText={SkillsProps.topText} skills={SkillsProps.skills} />
     </div>
   )

@@ -38,26 +38,25 @@ export const home = {
       "widget1": {
         "id": 1,
         "hello":
-          "Hello, I'm",
+          "Hello! I'm",
         "name": "Logan",
-        "subtext": "idk can't think rn"
+        "subtext": "What I love about tech is there is a never-ending ceiling of potential and opportunities to learn"
       },
       "widget2": {
         "id": 1,
         "title": "Front-end",
-        "subtitle": ["Developer", "Developer", "Developer"]
+        "subtitle": ["Developer", "Engineer", "Enjoyer"]
       }
       ,
       "widget3": {
         "id": 1,
         "linkedinText": "Connect with me!",
-        "linkedinProfilePic": "https://media.licdn.com/dms/image/C5603AQFjuT11IbEQbA/profile-displayphoto-shrink_800_800/0/1657481587710?e=1678924800&v=beta&t=SZaFPYfOLCKSZ9DDmfwEbomI4sw7U-OVPH3qxpr3E2Y",
         "linkedinURL": "https://www.linkedin.com/in/lo-gr/"
       },
       "widget4": {
         "id": 1,
         "topText": "Skills at a glance",
-        "skills": ["skill,", "skill,", "skill,", "skill,", "skill"]
+        "skills": ["React and Vue Frontend,", "AWS CloudOps,", "Server Side and Client Side Rendering,", "Full-Stack Experience"]
       }
     }
   },
@@ -102,7 +101,11 @@ export const background = {
     "id": 1,
     "attributes": {
       "image": portrait, //This would be a hosted image in strapi if I were hosting a db
-      "skills": ["JavaScript", "TypeScript", "HTML5", "CSS3", "SASS", "Tailwind", "AWS", "React", "React Native", "Jest", "Vue", "Nuxt", "Redux", "Git", "GitHub", "Gitlab", "C#", "ASP.NET 5", "Strapi", "Keycloak", "NPM", "Three.js", "Webpacks"],
+      "skills": {
+        "frontend": ["JavaScript", "TypeScript", "HTML5", "CSS3", "SASS", "Tailwind", "Amplify", "Storybook", "React", "React Native", "Vue", "Nuxt", "Redux", "Jest", "HLS", "Three.js"],
+        "backend": ["C#", "ASP.NET 5", "Strapi", "Keycloak", "NPM", "Express", "CDK"],
+        "cloudOps": ["Git", "GitHub", "Gitlab", "AWS - S3", "AWS - CloudFront", "AWS - Cognito", "AWS - CloudFormation", "AWS - Lambda", "AWS - EventBridge", "AWS - VPC", "AWS - API Gateway",]
+      },
       "experience": "Hello there! I'm **LOGAN**. I'm a Frontend focused full-stack developer from Washington State. I have been programming for almost 3 years now. I swapped careers from small business leadership to pursue a life long passion in tech. Currently, I am working as a Frontend Cloud Engineer at ***[TREK10](https://www.trek10.com/)*** working on contracts for the DoD. I enjoy rock climbing, playing games, reading and I like to hobby program games. I hope to be challenged beyond my comfort zone and working with a small team of diverse team members, all striving for a common goal. I feel most at home where I get an opportunity to learn something new everyday I wake up. “I like to wake up each morning and not know what I think, that I may reinvent myself in some way.” - Stephen Fry",
       "createdAt": "2022-12-29T20:31:06.055Z",
       "updatedAt": "2022-12-29T20:31:07.428Z",

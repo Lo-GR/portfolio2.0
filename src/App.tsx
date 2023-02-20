@@ -3,12 +3,12 @@ import Header from './components/Header/Header';
 import Nav from './components/Nav/Nav';
 import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
-import { globalConfig } from './utils/globalConfig';
-import { getHeight } from './utils/helpers';
+// import { globalConfig } from './utils/globalConfig';
+// import { getHeight } from './utils/helpers';
 import classNames from "classnames";
 import { useState, useEffect } from 'react';
 import MobileNav from './components/MobileNav/MobileNav';
-import Projects from './components/Projects/Projects';
+// import Projects from './components/Projects/Projects';
 import Background from './components/Background/Background';
 import About from './components/About/About';
 
