@@ -25,12 +25,12 @@ const Footer = ({ linkedinURL, email, githubURL }: FooterPropTypes) => {
                     </a>
                 </div>
                 <div>
-                    <a href={email} className="bg-dark-400 rounded-full p-1 flex content-center w-8">
+                    <a href={githubURL} className="bg-dark-400 rounded-full p-1 flex content-center w-8">
                         <GitHubIcon sx={{ color: "#FFFCF2" }} />
                     </a>
                 </div>
                 <div>
-                    <a href={githubURL} className="bg-dark-400 rounded-full p-1 flex content-center w-8" >
+                    <a href={`mailto: ${email}`} className="bg-dark-400 rounded-full p-1 flex content-center w-8" >
                         <EmailIcon sx={{ color: "#FFFCF2" }} />
                     </a>
                 </div>
