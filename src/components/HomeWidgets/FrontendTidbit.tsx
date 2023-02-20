@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import { motion } from "framer-motion";
 
 interface FrontendTidbitProps {
   title: string;
@@ -8,8 +9,24 @@ interface FrontendTidbitProps {
 }
 
 export default function FrontendTidbit({ title, list, className = "" }: FrontendTidbitProps) {
+  const variants = {
+    visible: {
+      y: 0,
+      transition: {
+        duration: .5,
+        delay: .1
+      },
+    },
+    hidden: {
+      y: 800,
+      transition: {
+        duration: .5,
+      },
+    }
+  }
+
   return (
-    <div className={classNames(className, 'frontendtidbit-container bg-dark-400 w-full p-10 text-4xl rounded')}>
+    <motion.div variants={variants} initial="hidden" animate="visible" exit="hidden" className={classNames(className, 'frontendtidbit-container bg-dark-400 w-full p-10 text-4xl rounded')}>
       <div>
         <p className='text-light-500 font-bold mb-5 underline'>
           {title}
@@ -19,6 +36,6 @@ export default function FrontendTidbit({ title, list, className = "" }: Frontend
           )}
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
